@@ -1,1 +1,13 @@
-<p>authors works!</p>
+<div>
+    <h2>Find an Author</h2>
+    <div>
+      <label for="author-id">Enter Author ID:</label>
+      <input type="text" #inputAuthorId id="author-id">
+      <button (click)="onSearch(inputAuthorId.value)">Look Up</button>
+    </div>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  
+  

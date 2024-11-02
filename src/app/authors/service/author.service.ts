@@ -1,13 +1,14 @@
+// src/app/authors/service/author.service.ts
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Author } from '../model/author'; // Adjusted import for model
+import { Author } from '../model/author';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthorsService {
-  private baseUrl = 'http://localhost:8080/books-api/authors';
+  private baseUrl = 'http://localhost:8080/books-api/authors'; // Update as necessary
 
   constructor(private http: HttpClient) {}
 

@@ -6,7 +6,7 @@ import { BooksComponent } from "./books/books.component";
 import { BookComponent } from "./books/book/book.component";
 import { LoginComponent } from "./login/login.component";
 import { AdminComponent } from "./admin/admin.component";
-import { AuthorComponent } from './authors/author/author/author.component';
+import { AuthorComponent } from './authors/author/author.component';
 
 import { loggedInGuard } from "./logged-in.guard";
 

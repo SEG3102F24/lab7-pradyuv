@@ -1,0 +1,27 @@
+<div>
+    <h2>Find an Author</h2>
+    <div>
+      <label for="author-id">Enter Author ID:</label>
+      <input type="text" #inputAuthorId id="author-id">
+      <button (click)="onSearch(inputAuthorId.value)">Search</button>
+    </div>
+  
+    <!-- Display error message if the author is not found -->
+    <div *ngIf="!authorDetails">
+      <h2>Author with the provided ID could not be located.</h2>
+    </div>
+  
+    <!-- Display author details if found -->
+    <div *ngIf="authorDetails">
+      <h2>Details for Author ID: {{ authorDetails.id }}</h2>
+      <div class="info-row">
+        <span class="label">First Name:</span>
+        <span class="value">{{ authorDetails.firstName }}</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Last Name:</span>
+        <span class="value">{{ authorDetails.lastName }}</span>
+      </div>
+    </div>
+  </div>
+  
